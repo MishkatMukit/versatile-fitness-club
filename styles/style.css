@@ -1,6 +1,74 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
 .inter-normal {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* shared style are here */
+.display-flex {
+    display: flex;
+}
+
+.primary-button {
+    border-radius: 46px;
+    background: rgba(230, 83, 60, 1);
+    font-weight: 600;
+    font-size: 1.125rem;
+    padding: 8px 20px;
+    border: none;
+}
+
+/* header styles are here */
+.header {
+    background: linear-gradient(180.00deg, rgba(17.411699295043945, 17.411699295043945, 17.411699295043945, 1), rgba(119.41169738769531, 119.41169738769531, 119.41169738769531, 0) 100%);
+}
+
+.navbar {
+    padding: 60px 190px;
+    align-items:center ;
+    justify-content: space-between;
+}
+#bar3{
+    display: none;
+}
+.nav-links {
+    align-items: center;
+    gap: 47px;
+}
+
+.nav-link {
+    list-style: none;
+
+}
+
+.nav-link a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.125rem;
+}
+
+.brand {
+    color: rgba(230, 83, 60, 1);
+    font-weight: 800;
+    font-size: 2.25rem;
+    font-style: italic;
+}
+
+/* Responsive media query starts here */
+@media screen and (max-width:576px){
+    .navbar{
+        padding: 20px;
+    }
+    .nav-links{
+        display: none;
+    }
+    #bar3{
+        display: block;
+    }
 }
