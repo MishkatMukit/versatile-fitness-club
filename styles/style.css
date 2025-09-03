@@ -15,6 +15,11 @@
     display: flex;
 }
 
+.container {
+    max-width: 75%;
+    margin: 0 auto;
+}
+
 .primary-button {
     border-radius: 46px;
     background: rgba(230, 83, 60, 1);
@@ -22,24 +27,42 @@
     font-size: 1.125rem;
     padding: 8px 20px;
     border: none;
+    color: white;
+}
+
+.secondary-button {
+    border-radius: 46px;
+    background: none;
+    font-weight: 600;
+    font-size: 1.125rem;
+    padding: 6px 18px;
+    border: 2px solid white;
+    color: white;
 }
 
 /* header styles are here */
 .header {
-    background: linear-gradient(180.00deg, rgba(17.411699295043945, 17.411699295043945, 17.411699295043945, 1), rgba(119.41169738769531, 119.41169738769531, 119.41169738769531, 0) 100%);
+    background: linear-gradient(180.00deg, rgba(17.411699295043945, 17.411699295043945, 17.411699295043945, 1)), rgba(0, 0, 0, 1);
 }
 
 .navbar {
-    padding: 60px 190px;
-    align-items:center ;
+
+    /* padding: 60px 190px; */
+    padding: 60px 0px;
+    align-items: center;
     justify-content: space-between;
 }
-#bar3{
+
+#bar3 {
     display: none;
 }
+
 .nav-links {
     align-items: center;
     gap: 47px;
+    padding: 5px 20px 5px 5px;
+    border-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .nav-link {
@@ -60,15 +83,121 @@
     font-style: italic;
 }
 
+.banner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner-content {
+    max-width: 520px;
+    padding: 76px 0px;
+}
+
+.banner-title {
+    font-size: 4.8rem;
+    color: white;
+}
+
+.banner-description {
+    color: white;
+    opacity: 0.5;
+    margin: 28px 0px;
+}
+
+#shape {
+    font-family: "Petit Formal Script", cursive;
+    font-weight: 400;
+}
+
+.banner-button {
+    display: flex;
+    gap: 14px;
+}
+
+.video-card-title {
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: white;
+}
+
+.video-card-subtitle {
+    color: rgba(239, 237, 232, 0.65);
+
+}
+
+.red-dot {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(230, 83, 60, 1);
+    border-radius: 40px;
+}
+
+.video-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 20px 20px;
+    height: 100px;
+    width: 200px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgb(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 8px;
+}
+
+.banner-side {
+    height: 580px;
+    display: flex;
+    align-items: flex-end;
+    background-image: url('../images/Images2.png');
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+#card1 {
+    position: relative;
+    top: -70px;
+    right: 60px;
+
+}
+
+#card2 {
+    position: relative;
+    top: -300px;
+    right: -55px;
+}
+
 /* Responsive media query starts here */
-@media screen and (max-width:576px){
-    .navbar{
+@media screen and (max-width:576px) {
+    .navbar {
         padding: 20px;
     }
-    .nav-links{
+
+    .nav-links {
         display: none;
     }
-    #bar3{
+
+    #bar3 {
         display: block;
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+    .banner-title {
+    font-size: 2.25rem;
+    color: white;
+}
+    #card1 {
+        position: relative;
+        top: -70px;
+        right: 60px;
+
+    }
+
+    #card2 {
+        position: relative;
+        top: -300px;
+        right: -20px;
     }
 }
