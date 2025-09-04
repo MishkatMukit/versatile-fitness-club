@@ -216,8 +216,48 @@ main section{
     .habit-card-description{
         color: rgba(255, 255, 255, 0.5);
     }
-/* Responsive media query starts here */
+
+    /* extra mile section starts here */
+    .extra-mile-card{
+        border-radius: 16px;
+        padding: 30px;
+        background-color:rgba(34, 34, 34, 1);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* justify-content: center; */
+        gap: 165px;
+    }
+    .extra-mile-card img{
+        border-radius: 16px;
+        width: 380px;
+        height: 330px;
+        
+        object-position: 67% 30%;
+        object-fit: none;
+    }
+    .extra-mile-content{
+        display: flex;
+        flex-direction: column;
+        max-width: 45%;
+    }
+    .extra-mile-content .section-title{
+        font-size: 3.5rem;
+    }
+    .extra-mile-content .section-description{
+        margin-bottom: 32px;
+    }
+
+
+
+
+/* Responsive media query starts here ---------------------------------------------------------------*/
+
+
 @media screen and (max-width:576px) {
+    main section{
+        margin-bottom: 50px;
+    }
     .container {
         max-width: 90%;
     }
@@ -236,6 +276,7 @@ main section{
 
     .banner{
         flex-direction: column;
+        margin-bottom: 0px;
     }
 
     .banner-content {
@@ -308,5 +349,21 @@ main section{
     }
     .habit-card-container{
         grid-template-columns: 1fr;
+    }
+    .extra-mile-card{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .extra-mile-content{
+        max-width: 100%;
+    }
+    .extra-mile-content .section-title{
+        font-size: 2rem;
+    }
+    .extra-mile-card img{
+        border-radius: 16px;
+        width: 280px;
+        height: 170px;
+        object-fit: cover;
     }
 }
