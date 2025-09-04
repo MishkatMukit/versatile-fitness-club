@@ -109,13 +109,23 @@
     font-weight: 400;
 }
 
+.banner-side {
+    height: 580px;
+    display: flex;
+    align-items: flex-end;
+    background-image: url('../images/Images2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
 .banner-button {
     display: flex;
     gap: 14px;
 }
 
 .video-card-title {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: 900;
     color: white;
 }
@@ -137,7 +147,7 @@
     align-items: center;
     justify-content: center;
     gap: 12px;
-    padding: 20px 20px;
+    /* padding: 10px 15px; */
     height: 100px;
     width: 200px;
     background: rgba(255, 255, 255, 0.1);
@@ -146,31 +156,31 @@
     border-radius: 8px;
 }
 
-.banner-side {
-    height: 580px;
-    display: flex;
-    align-items: flex-end;
-    background-image: url('../images/Images2.png');
-    background-repeat: no-repeat;
-    background-position: bottom right;
-}
+
 #card1 {
+
     position: relative;
     top: -70px;
     right: 60px;
-
 }
 
 #card2 {
+
     position: relative;
     top: -300px;
     right: -55px;
 }
 
+
+
 /* Responsive media query starts here */
 @media screen and (max-width:576px) {
+    .container {
+        max-width: 90%;
+    }
+
     .navbar {
-        padding: 20px;
+        padding: 20px 0px;
     }
 
     .nav-links {
@@ -184,20 +194,64 @@
     .banner {
         flex-direction: column;
     }
+
+    .banner-content {
+        padding: 20px 0px;
+    }
+
+    .banner-side {
+        height: 450px;
+        background-position: bottom center;
+        /* background-size: civer; */
+    }
+
     .banner-title {
-    font-size: 2.25rem;
-    color: white;
-}
+        font-size: 2.25rem;
+        color: white;
+    }
+
+    #club {
+        display: none;
+    }
+
     #card1 {
+        width: 150px;
+        height: 75px;
+        font-size: 1rem;
         position: relative;
-        top: -70px;
-        right: 60px;
+        top: -50px;
+        right: -20px;
 
     }
 
+    #card1 .video-card-title {
+        font-size: 1.1rem;
+    }
+
+    #card1 .video-card-subtitle {
+        font-size: 0.7rem;
+    }
+
+    .red-dot {
+        width: 30px;
+        height: 30px;
+    }
+
+
     #card2 {
+        width: 145px;
+        height: 75px;
         position: relative;
-        top: -300px;
-        right: -20px;
+        top: -320px;
+        right: -40px;
+    }
+
+    #card2 .video-card-title {
+        font-size: 1.8rem;
+
+    }
+
+    #card2 .video-card-subtitle {
+        font-size: 0.5rem;
     }
 }
