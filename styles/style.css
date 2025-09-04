@@ -58,6 +58,9 @@ main section{
     color: rgba(255, 255, 255, 0.5);
     margin: 14px 0px;
 }
+.center{
+    margin: 0px auto;
+}
 /* header styles are here */
 .header {
     background: linear-gradient(180.00deg, rgba(17.411699295043945, 17.411699295043945, 17.411699295043945, 1),rgba(119.41169738769531, 119.41169738769531, 119.41169738769531, 0) 100%);
@@ -350,6 +353,95 @@ main section{
     padding: 50px 0px 15px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+/* BMI Calculator starts here----------------------------------------------------------------------- */
+.bmi .section-info{
+    margin-bottom: 80px;
+}
+.bmi-container{
+    background: rgba(34, 34, 34, 1);
+    padding: 50px 0px;
+}
+.bmi-col-container{
+    display: flex;
+    justify-content: space-between;
+}
+.bmi-calculator{
+    max-width: 575px;
+}
+.bmi-col-title{
+    font-size: 1.75rem;
+}
+.bmi-col-description{
+    margin: 14px 0px 34px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.bmi-col table{
+    border-collapse: collapse;
+    margin-top: 52px;
+}
+.bmi-col tr{
+}
+.bmi-col th, td{
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    /* padding: 18px auto 18px 10px; */
+    /* text-align: center; */
+    padding-left: 10px;
+    width: 150px;
+    height: 42px;
+    text-align: ;
+    
+}
+.bmi-col th{
+    font-weight: 500;
+}
+.bmi-col td{
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+.bmi-form{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    gap: 12px;
+
+}
+.input-field{
+    padding: 12px 40px 12px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+.select-field{
+    padding: 12px 20px 12px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+}
+.bmi-form input, select{
+    border-right: 5px solid transparent;
+    /* width: calc(100% - 12px); */
+    width: 100%;
+    /* padding: 12px 40px 12px 20px; */
+    background-color:transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+    /* border-radius: 8px; */
+}
+.bmi-form input:focus{
+    outline: none;
+}
+.bmi-form select:focus{
+    /* color: rgba(255, 255, 255, 0.6); */
+    outline: none;
+}
+
+.bmi-form input::placeholder{
+    color: rgba(255, 255, 255, 0.6);
+}
+.bmi .primary-button{
+    padding: 16px 70px;
+}
+#activity{
+    grid-column: span 2;
+}
 /* Responsive media query starts here ---------------------------------------------------------------*/
 
 
@@ -472,5 +564,9 @@ main section{
     }
     .footer-col{
         max-width: 100%;
+    }
+    .bmi-col-container{
+        flex-direction: column;
+        gap: 40px;
     }
 }
