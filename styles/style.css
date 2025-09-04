@@ -248,7 +248,65 @@ main section{
         margin-bottom: 32px;
     }
 
+/*meet our team  starts here*/
+.our-team .section-info{
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 58px;
+}
+.team-card-container{
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: repeat(3, 330px);
+    gap: 20px;
+}
+.team-card{
+    border-radius: 16px;
+    display: flex;
+    align-items: flex-end;
+    width: 330px;
+    height: 270px;
 
+}
+.team-card-info{
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.team-title{
+    font-size: 1.25rem;
+    margin-bottom: 3px;
+    font-weight: 900;
+}
+.team-subtitle{
+    color: rgba(255, 255, 255, 0.5);
+}
+#team-card1{
+    background-image: url('../images/trainer1.png');
+    background-size: cover;
+}
+#team-card2{
+    background-image: url('../images/trainer2.png');
+    background-size: cover;
+}
+#team-card3{
+    background-image: url('../images/trainer3.png');
+    background-size: cover;
+    
+}
+#team-card4{
+    background-image: url('../images/trainer4.png');
+    background-size: cover;
+    background-position: bottom left;
+}
+#team-card5{
+    background-image: url('../images/trainer5.png');
+    background-size: cover;
+}
+#team-card6{
+    background-image: url('../images/trainer6.png');
+    background-size: cover;
+}
 
 
 /* Responsive media query starts here ---------------------------------------------------------------*/
@@ -347,7 +405,8 @@ main section{
     .section-title{
         font-size: 2rem;
     }
-    .habit-card-container{
+    .habit-card-container,
+    .team-card-container{
         grid-template-columns: 1fr;
     }
     .extra-mile-card{
