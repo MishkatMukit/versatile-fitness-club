@@ -219,7 +219,28 @@ main section{
     .habit-card-description{
         color: rgba(255, 255, 255, 0.5);
     }
+    /* Exercise part starts here */
 
+    .exercise .section-info{
+        text-align: center;
+    }
+    .exercise-container{
+        margin-top: 60px;
+        display: flex;
+        gap: 30px;
+        justify-content: center;
+    }
+    .exercise-card img{
+        width: 300px;
+        border-radius: 8px 8px 0px 0px;
+    }
+    .exercise-card{
+        width: 300px;
+        background-color: rgba(255,255,255,0.1);
+        padding: 16px;
+        border-radius: 16px;
+        margin: 0 auto;
+    }
     /* extra mile section starts here */
     .extra-mile-card{
         border-radius: 16px;
@@ -568,5 +589,8 @@ main section{
     .bmi-col-container{
         flex-direction: column;
         gap: 40px;
+    }
+    .exercise-container{
+        flex-direction: column;
     }
 }
