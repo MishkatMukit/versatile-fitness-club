@@ -135,7 +135,7 @@ main section{
     height: 580px;
     display: flex;
     align-items: flex-end;
-    background-image: url('../images/Images2.png');
+    background-image: url('../images/images2.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom right;
